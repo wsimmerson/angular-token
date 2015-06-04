@@ -1,0 +1,10 @@
+
+<div ng-hide="isLoggedIn()">
+  <form name="loginForm">
+    username: <input name="username" ng-model="username">
+    password: <input name="password" ng-model="password" type="password">
+    <button ng-click="logIn()">Log in</button>
+  </form>
+</div>
+
+<div ng-show="isLoggedIn()">You are already logged in <button ng-click="logOut()">Logout</button></div>
